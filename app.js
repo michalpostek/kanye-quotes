@@ -29,17 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    fetchQuote()
-        .then(data => showQuote(data.quote))
-        .catch(error => showError(error));
-
-    copyQuoteBtn.addEventListener('click', () => {
-        copyToClipboard(quoteOutput.textContent);
-    });
-
-    newQuoteBtn.addEventListener('click', () => {
+    const handleFetchQuote = () => {
         fetchQuote()
             .then(data => showQuote(data.quote))
             .catch(error => showError(error));
-    });
+    }
+
+    const handleCopyQuote = () => {
+        const quote = quoteOutput.textContent;
+        copyToClipboard(quote);
+    }
+
+    copyQuoteBtn.addEventListener('click', handleCopyQuote);
+    newQuoteBtn.addEventListener('click', handleFetchQuote);
+
+    handleFetchQuote();
 });
