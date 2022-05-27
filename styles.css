@@ -17,13 +17,75 @@ body {
     display: none;
 }
 
-.wrapper {
+.app {
     background-color: #FFFFFF;
     border-radius: 1vw;
     padding: 2vh 2vw;
+    width: max(420px, 36vw);
 }
 
-header {
+.app__header {
     text-align: center;
+    margin: 2vh 0;
+    font-size: 2.2em;
 }
 
+.content {
+    padding: 2vh 0;
+    border-bottom: 2px solid #1C1C1C;
+}
+
+.quote__text {
+    font-size: 1.7em;
+    min-height: 14vh;
+}
+
+.quote__author {
+    margin-top: 3vh;
+    text-align: right;
+    font-size: 1.3em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+.btn {
+    font-size: 1.1em;
+    transition: .1s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--primary {
+    padding: 1vh 1vw;
+    border-radius: 1vw;
+    border: 1px solid #000000;
+    background-color: #0671B7;
+    color: #FFFFFF;
+}
+
+.btn--primary:hover {
+    background-color: #185c8a;
+}
+
+.btn--secondary {
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+    padding: 1vh;
+    background-color: #f3f3f3;
+}
+
+.btn--secondary:hover {
+    background-color: #d8d8d8;
+}
+
+.btn--secondary img {
+    height: 100%;
+}

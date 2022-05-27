@@ -9,18 +9,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Kanye Quotes Generator</h1>
-        </header>
-        <blockquote cite="https://kanye.rest/" class="quote hidden">
-            <p class="quote__text"></p>
-            <p class="quote__author">~Kanye West</p>
-        </blockquote>
-        <p class="error hidden"></p>
+    <div class="app">
+        <h1 class="app__header">Kanye Quotes</h1>
+        <div class="content">
+            <blockquote cite="https://kanye.rest/" class="quote hidden">
+                <p class="quote__text">&ldquo; <span></span> &rdquo;</p>
+                <p class="quote__author">&#8212; Kanye West</p>
+            </blockquote>
+            <p class="error hidden"></p>
+        </div>
         <div class="menu">
-            <button id="copyQuoteBtn">Copy</button>
-            <button id="newQuoteBtn"">New Quote</button>
+            <button class="btn btn--secondary" id="copyQuoteBtn">
+                <img src="https://cdn-icons-png.flaticon.com/128/126/126498.png" alt="copy">
+            </button>
+            <button class="btn btn--primary" id="newQuoteBtn"">New Quote</button>
         </div>
     </div>
     <script src="./app.js"></script>
