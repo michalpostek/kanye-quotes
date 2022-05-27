@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const quoteWrapper = document.querySelector('.quote');
     const quoteOutput = document.querySelector('.quote__text');
     const errorOutput = document.querySelector('.error');
     const copyQuoteBtn = document.querySelector('#copyQuoteBtn');
     const newQuoteBtn = document.querySelector('#newQuoteBtn');
 
     const showQuote = quote => {
-        quoteOutput.classList.remove('hidden');
+        quoteWrapper.classList.remove('hidden');
         errorOutput.classList.add('hidden');
         quoteOutput.textContent = quote;
     }
 
     const showError = error => {
-        quoteOutput.classList.add('hidden');
+        quoteWrapper.classList.add('hidden');
         errorOutput.classList.remove('hidden');
         errorOutput.textContent = error;
     }
@@ -27,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
             return error;
         }
     }
+
+    fetchQuote()
+        .then(data => showQuote(data.quote))
+        .catch(error => showError(error));
 
     copyQuoteBtn.addEventListener('click', () => {
         copyToClipboard(quoteOutput.textContent);
