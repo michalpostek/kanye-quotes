@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0671B7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    background-color: #FFFFFF;
+    border-radius: 1vw;
+    padding: 2vh 2vw;
+}
+
+header {
+    text-align: center;
+}
+
