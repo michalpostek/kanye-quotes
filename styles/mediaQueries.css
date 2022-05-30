@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+
     .app {
         width: 90%;
         padding: 6vh 5vw;
