@@ -1,6 +1,7 @@
 <h1>Kanye quotes</h1>
 
 <p>Very simple web app based on HTML, CSS and JavaScript, that generates random Kanye West quotes.</p>
+<p><a href="https://michalpostek.github.io/kanye-quotes/">Live demo</></p>
 
 <h2>Features</h2>
 
@@ -30,7 +31,3 @@
         <p>Open the index.html file in the browser.</p>
     </li>
 </ol>
-
-<h2>Live</h2>
-
-<p>Check project live <a href="https://michalpostek.github.io/kanye-quotes/">here</a>.</p>
