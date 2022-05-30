@@ -38,6 +38,7 @@ body {
 .quote__text {
     font-size: 1.7em;
     min-height: 14vh;
+    font-weight: 300;
 }
 
 .quote__author {
@@ -47,15 +48,17 @@ body {
 }
 
 .app__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: right;
     padding: 2vh 0;
 }
 
 .btn {
     font-size: 1.1em;
     transition: .1s;
+    padding: 1vh 1vw;
+    border-radius: 1vw;
+    margin-left: 4px;
+    border: 1px solid #000000;
 }
 
 .btn:hover {
@@ -63,9 +66,6 @@ body {
 }
 
 .btn--primary {
-    padding: 1vh 1vw;
-    border-radius: 1vw;
-    border: 1px solid #000000;
     background-color: #0671B7;
     color: #FFFFFF;
 }
@@ -75,17 +75,10 @@ body {
 }
 
 .btn--secondary {
-    border-radius: 50%;
-    height: 5vh;
-    width: 5vh;
-    padding: 1vh;
-    background-color: #f3f3f3;
+    color: #0671B7;
+    background-color: transparent;
 }
 
 .btn--secondary:hover {
     background-color: #d8d8d8;
-}
-
-.btn--secondary img {
-    height: 100%;
 }

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .app {
+        width: 90%;
+        padding: 6vh 5vw;
+        border-radius: 10vw;
+    }
+
+    .quote__text {
+        min-height: auto;
+    }
+}
