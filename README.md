@@ -27,7 +27,7 @@
         <pre>git clone https://github.com/michalpostek/kanye-quotes.git</pre>
     </li>
     <li>
-        <p>Open the <u>index.html</u> file in the browser.</p>
+        <p>Open the index.html file in the browser.</p>
     </li>
 </ol>
 
