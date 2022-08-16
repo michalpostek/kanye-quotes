@@ -6,8 +6,6 @@
 <h2>Features</h2>
 
 <ul>
-    <li>Fetching the data from <a href="https://kanye.rest/"> kanye.rest</a> API</li>
-    <li>Inserting data into DOM elements using JS</li>
     <li>Allows user to generate new quote by clicking 'New Quote' button</li>
     <li>Allows user to quickly copy a quote to the clipboard by clicking 'Copy' icon</li>
 </ul>
